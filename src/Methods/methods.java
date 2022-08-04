@@ -1,6 +1,9 @@
 package Methods;
 
 public class methods {
+	
+	// method overloading- methods with same name but different paraments or diffent type eg int myMethod and double myMethod
+	
 	static void myMethod(String firstName, int age) {
 		//System.out.println("I just got it!");
 		System.out.println(firstName + " Abdulkadir"); // outputs Asha Abdulkadir & Halima Abdulkadir
@@ -12,6 +15,10 @@ public class methods {
 	}
 	
 	static int myMethod(int y, int z) {
+		return y + z;
+	}
+	
+	static double myMethod(double y, double z) {  // can have different type of paramenters
 		return y + z;
 	}
 	
@@ -43,7 +50,13 @@ public class methods {
 		int sum = myMethod(5, 4);
 		System.out.println(sum); // outputs a 2nd 9
 		
+		int num1 = myMethod(5, 5);
+		double num2 = myMethod(5, 5);
+		System.out.println(num1); //outputs 10
+		System.out.println(num2); //outputs 10.0
+		
 		checkAge(20); // outputs Access granted!
+		
 	
 		
 	}
