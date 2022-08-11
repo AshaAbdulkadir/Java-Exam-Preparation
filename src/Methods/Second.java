@@ -1,8 +1,8 @@
 package Methods;
 
 public class Second {
-	// create a method 
 	
+	// create a method 
 	static void myMethod() {
 		System.out.println("Hello Asha!");
 	}
